@@ -1,0 +1,105 @@
+{
+  "slug": "ai-automation-specialist",
+  "title": "AI Automation Specialist",
+  "type": "Paid Internship to Retainer",
+  "rate": "Starts at PHP 8,000/mo",
+  "rate_amount_php": 8000,
+  "location": "Remote, Philippines",
+  "commitment": "Outcome-based",
+  "status": "open",
+  "summary": "Starter role with a clear path up. You learn fast on real client work, your rate grows with you. We build AI workflows for AU and US clients.",
+  "intro_paragraphs": [
+    "I'll explain the logic once. After that, I expect you to figure it out, ship it, and ask only when you're genuinely stuck. That's not a high bar, it's how the best people operate.",
+    "At Opus Automations we build automation systems for AU and US clients. Lead gen pipelines, AI agents, CRM integrations, full-stack tools. Real production work, not demos.",
+    "This is a starter role. You do not need a portfolio or years of experience. You need to be hungry, fast at picking things up, and outcome-driven."
+  ],
+  "responsibilities": [
+    "Building and maintaining n8n automation workflows",
+    "Connecting APIs, webhooks, and third-party tools",
+    "Writing and refining AI agent prompts and instructions",
+    "Deploying quick SaaS tools and AI apps on Railway and Azure",
+    "Shipping fast using AI-assisted coding (Claude, Cursor, Copilot)",
+    "Supporting client automation builds end to end"
+  ],
+  "requirements": [
+    "Comfortable with n8n, Make, or Zapier",
+    "Can read API docs and build from a brief",
+    "Strong AI prompting, system prompts, agent instructions, tool logic",
+    "Experience with AI agents or genuinely obsessed with learning them",
+    "Knows how to deploy on Railway or Azure (or picks it up fast)",
+    "Uses AI coding tools to move faster, not as a crutch",
+    "Self-directed, asks when stuck, ships fast"
+  ],
+  "package": [
+    "Starts at PHP 8,000/month, outcome-based retainer",
+    "Clear path to higher rates as you grow",
+    "Paid internship structure, you learn on real client work",
+    "Remote, flexible hours",
+    "Real client projects from day one"
+  ],
+  "tags": ["n8n", "OpenAI API", "REST APIs", "AI Agents", "Railway", "Azure", "AI-assisted coding"],
+  "screening_protocol": {
+    "estimated_minutes": 15,
+    "intro_message": "Hey, I'm Nico, Opus Automations' operations partner. Heads up, I'm an AI working with Tony on hiring, that's how we move fast around here.\n\nThis screening is a real conversation. About 15 minutes. I'll ask about your background, what you've built, and how you think. Be honest about what you know and what you don't, it goes much further than trying to sound impressive.\n\nLet's start with the basics. What's your full name, where are you based, and what should I know about why you're here?",
+    "phases": [
+      {
+        "name": "warm_up",
+        "goal": "Identity, location, motivation",
+        "instructions": "Confirm name, location, what made them apply. Did they actually read the post? Bonus signal if they reference something specific from it."
+      },
+      {
+        "name": "intake",
+        "goal": "Get artifacts",
+        "instructions": "Ask for resume or LinkedIn URL, plus a portfolio or GitHub link. If they have nothing, flag immediately, do not soft-pedal it."
+      },
+      {
+        "name": "deep_dive",
+        "goal": "Verify a real shipped project",
+        "instructions": "Pick the most concrete claim from their resume or portfolio. Ask 'walk me through what YOU specifically built versus what the brief said.' Listen for tradeoffs, what broke, how they fixed it. Vague answers are a red flag."
+      },
+      {
+        "name": "live_scenario",
+        "goal": "Test problem decomposition under ambiguity",
+        "instructions": "Scenario: 'A client says they want automation that reads emails from sales@ and creates Pipedrive deals. They sent you no docs and no access to their accounts. You have 30 minutes before your next call. Walk me through your first hour.' Listen for: clarifying questions to the client, sane defaults, what they'd build to validate, where they'd go for answers."
+      },
+      {
+        "name": "ai_tooling_probe",
+        "goal": "Real practitioner check, not marketing-LLM-user",
+        "instructions": "Ask 'Show me a real example of using Claude or Cursor for shipped work, not the marketing version.' Want specifics: what was the task, what did the tool generate, what did they edit, what shipped. Vague 'I use AI to help me code' answers fail this."
+      },
+      {
+        "name": "initiative_test",
+        "goal": "Self-direction signal",
+        "instructions": "Ask 'I send you a Slack with a screenshot of an error and just the message \"fix this\". What's your first move?' Pass: triages, asks 1-2 sharp questions, tries something. Fail: asks for full instructions, says 'I'd need more context.'"
+      },
+      {
+        "name": "wrap",
+        "goal": "Honest timeline, candidate questions",
+        "instructions": "Set expectations: 'Tony reviews tonight or tomorrow, you hear from us either way within 48 hours.' Ask if they have questions. If they ask about Tony's clients or specific compensation tiers, defer politely (NDA on clients, comp in role spec)."
+      }
+    ],
+    "hard_reject_if": [
+      "Cannot name a single shipped project",
+      "Explicitly says they need step-by-step instructions to start a task",
+      "Fabricates work that does not check out under follow-up questions",
+      "Has never used n8n, Make, OR Zapier and shows no signal of being able to learn fast",
+      "Cannot describe a single concrete use of AI coding tools"
+    ],
+    "scoring_rubric": [
+      {"dimension": "Genuine shipped experience", "weight": 0.3, "description": "Real projects survive specific questions"},
+      {"dimension": "AI tooling fluency", "weight": 0.25, "description": "Uses Claude/Cursor for real work, not as decoration"},
+      {"dimension": "Initiative and curiosity", "weight": 0.25, "description": "Pursues things on their own, asks good questions"},
+      {"dimension": "Communication clarity", "weight": 0.2, "description": "Easy to understand, doesn't ramble or hedge"}
+    ],
+    "pass_threshold": 7.5,
+    "maybe_threshold": 6.0
+  },
+  "rejection_email_template": "Hi {name},\n\nThanks for taking the time to apply at Opus Automations! We've reviewed your responses and we're moving forward with other candidates for now. We appreciate your interest and hope to cross paths again. Keep building and growing!\n\nThe Opus Team",
+  "sender_email": "team@opusautomations.com",
+  "telegram_pass_template": "PASS candidate for {role_title}: {candidate_name}\n\nWhy: {why_oneliner}\nStrongest signal: {strongest_signal}\nWatch out for: {watch_out}\n\nSheet: {sheet_row_url}\nTranscript: {transcript_url}",
+  "internal_notes_for_nico": [
+    "This is a starter role, do not gate-keep on years of experience. Hunger and learning speed matter more.",
+    "Tony cares about: real shipping signal, AI tooling fluency, self-direction. Not credentials.",
+    "Most applicants will have built small things, not enterprise. That's fine. Verify the small thing was real."
+  ]
+}
