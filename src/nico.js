@@ -1,8 +1,8 @@
-import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-const MODEL = 'claude-sonnet-4-5-20250929';
+const MODEL = process.env.NICO_MODEL || 'gpt-4o';
 
 function buildSystemPrompt(role, internalState) {
   const proto = role.screening_protocol;
@@ -164,22 +164,21 @@ function parseInternalUpdate(text) {
 export async function generateNicoReply({ role, messages, internalState }) {
   const system = buildSystemPrompt(role, internalState);
 
-  const apiMessages = messages.map((m) => ({
-    role: m.role === 'assistant' ? 'assistant' : 'user',
-    content: m.content,
-  }));
+  const apiMessages = [
+    { role: 'system', content: system },
+    ...messages.map((m) => ({
+      role: m.role === 'assistant' ? 'assistant' : 'user',
+      content: m.content,
+    })),
+  ];
 
-  const response = await client.messages.create({
+  const response = await client.chat.completions.create({
     model: MODEL,
     max_tokens: 1500,
-    system,
     messages: apiMessages,
   });
 
-  const fullText = response.content
-    .filter((b) => b.type === 'text')
-    .map((b) => b.text)
-    .join('');
+  const fullText = response.choices[0]?.message?.content || '';
 
   return parseInternalUpdate(fullText);
 }
