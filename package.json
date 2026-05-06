@@ -13,11 +13,11 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.40.1",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "googleapis": "^144.0.0",
     "node-fetch": "^3.3.2",
+    "openai": "^4.77.0",
     "pg": "^8.13.1"
   }
 }
